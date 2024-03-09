@@ -1,10 +1,10 @@
 @extends('admin.layouts.app')
-@section('title', 'Tambah Gedung')
+@section('title', 'Tambah Produk')
 @section('content')
     <!-- Main Content -->
     <section class="section">
         <div class="section-body">
-            <h4 class="section-title">Tambah Gedung</h4>
+            <h4 class="section-title">Tambah Produk</h4>
             <div class="row">
                 <div class="col-12">
                     @include('admin.layouts.alert')

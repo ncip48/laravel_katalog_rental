@@ -174,12 +174,10 @@
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>City transfer</h3>
+                                    <h3>Antar Kota</h3>
                                 </a>
                                 <p>
-                                    Risus commodo maecenas accumsan lacus
-                                    vel facilisis. Dorem ipsum dolor
-                                    consectetur adipiscing elit.
+                                    Kami menyediakan transportasi antar kota/dalam kota
                                 </p>
                             </div>
                         </div>
@@ -190,12 +188,10 @@
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>Airport transfer</h3>
+                                    <h3>Antar Bandara</h3>
                                 </a>
                                 <p>
-                                    Risus commodo maecenas accumsan lacus
-                                    vel facilisis. Dorem ipsum dolor
-                                    consectetur adipiscing elit.
+                                    Kami menyediakan jasa untuk mengantar ke bandara sesuai tujuan
                                 </p>
                             </div>
                         </div>
@@ -207,12 +203,10 @@
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>Hospital transfer</h3>
+                                    <h3>Antar Provinsi</h3>
                                 </a>
                                 <p>
-                                    Risus commodo maecenas accumsan lacus
-                                    vel facilisis. Dorem ipsum dolor
-                                    consectetur adipiscing elit.
+                                    Kami siap menyediakan layanan antar provinsi bahkan lintas pulau
                                 </p>
                             </div>
                         </div>
