@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>
-                        {!! html_entity_decode($site->sk) !!}
+                        {!! $site->sk !!}
                     </p>
                 </div>
             </div>
