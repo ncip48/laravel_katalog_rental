@@ -154,10 +154,10 @@
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>Antar Kota</h3>
+                                    <h3>Lintas Provinsi</h3>
                                 </a>
                                 <p>
-                                    Kami menyediakan transportasi antar kota/dalam kota
+                                    Kami menyediakan transportasi antar kota/dalam kota, provinsi
                                 </p>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>Antar Bandara</h3>
+                                    <h3>Antar ke Bandara</h3>
                                 </a>
                                 <p>
                                     Kami menyediakan jasa untuk mengantar ke bandara sesuai tujuan
@@ -178,15 +178,14 @@
                         <div class="single-service">
                             <span class="service-number">03 </span>
                             <div class="service-icon">
-                                <img src="{{ asset('vendor/assets/img/hospital-transport.png') }}"
-                                    alt="hospital trasport" />
+                                <img src="{{ asset('vendor/assets/img/hotel-transport.png') }}" alt="city trasport" />
                             </div>
                             <div class="service-text">
                                 <a href="#">
-                                    <h3>Antar Provinsi</h3>
+                                    <h3>Antar ke Hotel</h3>
                                 </a>
                                 <p>
-                                    Kami siap menyediakan layanan antar provinsi bahkan lintas pulau
+                                    Kami siap mengantarkan ke hotel sesuai dengan tujuan
                                 </p>
                             </div>
                         </div>
