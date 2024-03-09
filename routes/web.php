@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\BankController;
 use App\Http\Controllers\Admin\RekeningController as AdminRekeningController;
 use App\Http\Controllers\PembatalanController;
 use App\Http\Controllers\Admin\PembatalanController as AdminPembatalanController;
+use App\Http\Controllers\Admin\ProdukController;
 use App\Http\Controllers\Karyawan\HomeController as KaryawanHomeController;
 use App\Http\Controllers\Karyawan\ReservasiController as KaryawanReservasiController;
 use App\Http\Controllers\Karyawan\PembatalanController as KaryawanPembatalanController;
@@ -61,7 +62,7 @@ Route::middleware(['is_admin', 'auth'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('admin.index');
         Route::get('home', [HomeController::class, 'index'])->name('admin.home');
-        Route::resource('gedung', GedungController::class);
+        Route::resource('produk', ProdukController::class);
         Route::resource('user', UserController::class);
         Route::resource('reservasi', AdminReservasiController::class);
         Route::post('reservasi/{reservasi}/proses', AdminReservasiController::class . '@proses')->name('reservasi.proses');

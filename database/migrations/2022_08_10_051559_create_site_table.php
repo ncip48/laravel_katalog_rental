@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('haribuka')->nullable();
             $table->string('jambuka')->nullable();
             $table->string('jamtutup')->nullable();
+            $table->string('owner')->nullable();
             $table->timestamps();
         });
     }

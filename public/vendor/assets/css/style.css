@@ -1717,6 +1717,8 @@ button.gauto-theme-btn:hover {
 
 .offer-image img {
     width: 100%;
+    height: 250px;
+    object-fit: contain;
 }
 
 .offer-text {

@@ -61,6 +61,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="header-top-right">
+                        <a href="{{ route('login') }}">
+                            <i class="fa fa-key"></i>
+                            login
+                        </a>
                         {{-- <a href="#">
                             <i class="fa fa-key"></i>
                             login
@@ -116,8 +120,8 @@
                                 <img src="{{ asset('vendor/assets/img/globe.png') }}" alt="globe" />
                             </div>
                             <div class="header-promo-info">
-                                <h3>Newyork, USA</h3>
-                                <p>Melbourne City, Austalia</p>
+                                <h3>Indonesia</h3>
+                                <p>Ngawi, Jawa Timur</p>
                             </div>
                         </div>
                         <div class="single-header-promo">
@@ -125,8 +129,8 @@
                                 <img src="{{ asset('vendor/assets/img/clock.png') }}" alt="clock" />
                             </div>
                             <div class="header-promo-info">
-                                <h3>Monday to Friday</h3>
-                                <p>9:00am - 6:00pm</p>
+                                <h3>Senin s/d Jumat</h3>
+                                <p>24 Jam</p>
                             </div>
                         </div>
                     </div>

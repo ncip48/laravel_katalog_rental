@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Admin\ProdukController;
 use App\Models\Gedung;
 use App\Models\Reservasi;
 use Illuminate\Http\Request;
@@ -55,11 +56,17 @@ class ReservasiController extends Controller
     public function index()
     {
         //get gedung all ~> (SELECT * FROM gedung)
-        $gedung = Produk::all();
+        $produks = Produk::all();
+        $produks = $produks->map(function ($item) {
+            $item['transmisi_name'] = ProdukController::transmisi($item->transmisi);
+
+            return $item;
+        });
+        $site = Site::first();
         //ini di file resources/views/home.blade.php
         //compact ngebawa parameter contone parameter $gedung dilempar ke view home.blade.php
         //jadi nanti di home.blade.php kita bisa mengambil data gedung dari $gedung
-        return view('home', compact('gedung'));
+        return view('home', compact('produks', 'site'));
     }
 
     public function search(Request $request)

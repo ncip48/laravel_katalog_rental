@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('produk', function (Blueprint $table) {
+        Schema::create('slider', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->text('deskripsi');
+            $table->string('title');
+            $table->text('description');
             $table->string('foto');
-            $table->string('harga');
-            $table->string('model');
-            $table->integer('transmisi')->comment('0: Otomatis, 1: Manual, 2:Hybrid, 3:Listrik');
-            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }
@@ -33,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('produk');
+        Schema::dropIfExists('slider');
     }
 };

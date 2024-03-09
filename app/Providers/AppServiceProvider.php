@@ -48,5 +48,25 @@ class AppServiceProvider extends ServiceProvider
             $result = $date->format('Y-m-d H:i:s');
             return Carbon::createFromFormat('Y-m-d H:i:s', $result)->locale('id')->isoFormat('dddd, D MMM Y');
         });
+
+        Blade::directive('transmisi', function ($expression) {
+            switch ($expression) {
+                case 0:
+                    return "Otomatis";
+                    break;
+                case 1:
+                    return "Manual";
+                    break;
+                case 2:
+                    return "Hybrid";
+                    break;
+                case 3:
+                    return "Listrik";
+                    break;
+                default:
+                    return '-';
+                    break;
+            }
+        });
     }
 }

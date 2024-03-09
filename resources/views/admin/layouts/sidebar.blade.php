@@ -24,10 +24,10 @@
                 </a>
             </li>
             <li>
-                <a href="{{ url('admin/gedung') }}"
-                    class="btn btn-toggle align-items-center rounded {{ $route_name == 'gedung.index' ? 'active' : '' }}">
+                <a href="{{ url('admin/produk') }}"
+                    class="btn btn-toggle align-items-center rounded {{ $route_name == 'produk.index' ? 'active' : '' }}">
                     <i class="fa fa-building me-2"></i>
-                    Gedung
+                    Produk
                 </a>
             </li>
             <li>
