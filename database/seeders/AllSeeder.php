@@ -15,6 +15,6 @@ class AllSeeder extends Seeder
      */
     public function run()
     {
-        DB::unprepared(file_get_contents('database/gedung.sql'));
+        DB::unprepared(file_get_contents('database/db.sql'));
     }
 }
