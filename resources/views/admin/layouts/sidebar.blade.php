@@ -26,7 +26,7 @@
             <li>
                 <a href="{{ url('admin/produk') }}"
                     class="btn btn-toggle align-items-center rounded {{ $route_name == 'produk.index' ? 'active' : '' }}">
-                    <i class="fa fa-building me-2"></i>
+                    <i class="fa fa-archive me-2"></i>
                     Produk
                 </a>
             </li>
@@ -49,6 +49,13 @@
                     class="btn btn-toggle align-items-center rounded {{ $route_name == 'galeri.index' ? 'active' : '' }}">
                     <i class="fa fa-picture-o me-2"></i>
                     Galeri
+                </a>
+            </li>
+            <li>
+                <a href="{{ url('admin/slider') }}"
+                    class="btn btn-toggle align-items-center rounded {{ $route_name == 'slider.index' ? 'active' : '' }}">
+                    <i class="fa fa-sliders me-2"></i>
+                    Slider
                 </a>
             </li>
             {{-- <li>

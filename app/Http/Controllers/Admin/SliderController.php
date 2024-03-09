@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Galeri;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 
-class GaleriController extends Controller
+class SliderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class GaleriController extends Controller
      */
     public function index()
     {
-        $galeries = Galeri::paginate(5);
-        return view('admin.galeri.index', compact('galeries'));
+        $sliders = Slider::paginate(5);
+        return view('admin.slider.index', compact('sliders'));
     }
 
     /**
@@ -26,7 +26,7 @@ class GaleriController extends Controller
      */
     public function create()
     {
-        return view('admin.galeri.create');
+        return view('admin.slider.create');
     }
 
     /**
@@ -37,17 +37,18 @@ class GaleriController extends Controller
      */
     public function store(Request $request)
     {
-        $fileimage = $request->file('foto');
+        $fileimage = $request->file('file');
         $nameimage = time() . '.' . $fileimage->getClientOriginalExtension();
-        $fileimage->move(public_path('img/gedung'), $nameimage);
+        $fileimage->move(public_path('img/slider'), $nameimage);
 
         $fullPathUriImage = $nameimage;
 
-        Galeri::create([
-            'tag' => $request->title,
-            'url' => $fullPathUriImage,
+        Slider::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'foto' => $fullPathUriImage,
         ]);
-        return redirect(route('galeri.index'))->with('success', 'Galeri berhasil ditambahkan');
+        return redirect(route('slider.index'))->with('success', 'Slider berhasil ditambahkan');
     }
 
     /**
@@ -67,9 +68,9 @@ class GaleriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Galeri $galeri)
+    public function edit(Slider $slider)
     {
-        return view('admin.galeri.edit')->with('galeri', $galeri);
+        return view('admin.slider.edit')->with('slider', $slider);
     }
 
     /**
@@ -79,22 +80,23 @@ class GaleriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Galeri $galeri)
+    public function update(Request $request, Slider $slider)
     {
         $input = $request->all();
-        if ($image = $request->file('foto')) {
-            $fileimage = $request->file('foto');
+        if ($image = $request->file('file')) {
+            $fileimage = $request->file('file');
             $nameimage = time() . '.' . $fileimage->getClientOriginalExtension();
-            $fileimage->move(public_path('img/gedung'), $nameimage);
+            $fileimage->move(public_path('img/slider'), $nameimage);
 
             $fullPathUriImage = $nameimage;
-            $input['url'] = "$fullPathUriImage";
+            $input['foto'] = "$fullPathUriImage";
         } else {
-            unset($input['url']);
+            unset($input['foto']);
         }
-        $input['tag'] = $request->title;
-        $galeri->update($input);
-        return redirect()->route('galeri.index')->with('success', 'Galeri berhasil diupdate');
+        $input['title'] = $request->title;
+        $input['description'] = $request->description;
+        $slider->update($input);
+        return redirect()->route('slider.index')->with('success', 'Slider berhasil diupdate');
     }
 
     /**
@@ -103,9 +105,9 @@ class GaleriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Galeri $galeri)
+    public function destroy(Slider $slider)
     {
-        $galeri->delete();
-        return redirect()->route('galeri.index')->with('success', 'Galeri berhasil dihapus');
+        $slider->delete();
+        return redirect()->route('slider.index')->with('success', 'Slider berhasil dihapus');
     }
 }

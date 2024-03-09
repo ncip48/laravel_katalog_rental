@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\RekeningController as AdminRekeningController;
 use App\Http\Controllers\PembatalanController;
 use App\Http\Controllers\Admin\PembatalanController as AdminPembatalanController;
 use App\Http\Controllers\Admin\ProdukController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Karyawan\HomeController as KaryawanHomeController;
 use App\Http\Controllers\Karyawan\ReservasiController as KaryawanReservasiController;
 use App\Http\Controllers\Karyawan\PembatalanController as KaryawanPembatalanController;
@@ -71,6 +72,7 @@ Route::middleware(['is_admin', 'auth'])->group(function () {
         Route::resource('bank', BankController::class);
         Route::resource('rekening', AdminRekeningController::class);
         Route::resource('pembatalan', AdminPembatalanController::class);
+        Route::resource('slider', SliderController::class);
         Route::patch('pembatalan/{pembatalan}/terima', [AdminPembatalanController::class, 'terima'])->name('pembatalan.terima');
         Route::patch('pembatalan/{pembatalan}/tolak', [AdminPembatalanController::class, 'tolak'])->name('pembatalan.tolak');
 
