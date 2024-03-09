@@ -276,7 +276,9 @@
                                                     </ul>
                                                     <div class="offer-action">
                                                         <a href="#" class="offer-btn-1"></a>
-                                                        <a href="#" class="offer-btn-2">Pesan</a>
+                                                        <a target="_blank"
+                                                            href="https://wa.me/{{ $site->phone_wa }}?text=Halo saya mau pesan mobil {{ $p->nama }}"
+                                                            class="offer-btn-2">Pesan</a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -63,6 +63,7 @@ class ReservasiController extends Controller
             return $item;
         });
         $site = Site::first();
+        $site->phone_wa = preg_replace('/0/', '62', $site->phone, 1);
         //ini di file resources/views/home.blade.php
         //compact ngebawa parameter contone parameter $gedung dilempar ke view home.blade.php
         //jadi nanti di home.blade.php kita bisa mengambil data gedung dari $gedung
