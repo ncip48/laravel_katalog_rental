@@ -30,7 +30,7 @@
                     Produk
                 </a>
             </li>
-            <li>
+            {{-- <li>
                 <a href="{{ url('admin/reservasi') }}"
                     class="btn btn-toggle align-items-center rounded {{ $route_name == 'reservasi.index' ? 'active' : '' }}">
                     <i class="fa fa-calendar me-2"></i>
@@ -43,7 +43,7 @@
                     <i class="fa fa-calendar-times-o me-2"></i>
                     Pembatalan
                 </a>
-            </li>
+            </li> --}}
             <li>
                 <a href="{{ url('admin/galeri') }}"
                     class="btn btn-toggle align-items-center rounded {{ $route_name == 'galeri.index' ? 'active' : '' }}">
@@ -51,7 +51,7 @@
                     Galeri
                 </a>
             </li>
-            <li>
+            {{-- <li>
                 <a href="{{ url('admin/bank') }}"
                     class="btn btn-toggle align-items-center rounded {{ $route_name == 'bank.index' ? 'active' : '' }}">
                     <i class="fa fa-university me-2"></i>
@@ -64,7 +64,7 @@
                     <i class="fa fa-credit-card me-2"></i>
                     Rekening
                 </a>
-            </li>
+            </li> --}}
             <hr />
             <li>
                 <a href="{{ url('admin/syarat-ketentuan') }}"
