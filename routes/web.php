@@ -41,7 +41,7 @@ Route::get('gallery', [GaleriController::class, 'index'])->name('gallery');
 Route::post('booking/cancel', [ReservasiController::class, 'cancel'])->name('cancel');
 Route::post('booking/payment', [ReservasiController::class, 'payment'])->name('payment');
 Route::post('booking/proof', [ReservasiController::class, 'proof'])->name('proof');
-Route::get('syarat-ketentuan', [SiteController::class, 'syaratUser']);
+Route::get('syarat-ketentuan', [SiteController::class, 'syaratUser'])->name('sk');
 Route::get('about', [SiteController::class, 'aboutUser'])->name('about');
 Route::get('jadwal', [ReservasiController::class, 'cekGedungTersedia']);
 Route::get('cek-reservasi', [ReservasiController::class, 'cek_reservasi']);

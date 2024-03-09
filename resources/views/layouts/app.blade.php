@@ -163,6 +163,9 @@
                                 <li class="{{ request()->routeIs('gallery') ? 'active' : '' }}">
                                     <a href="{{ route('gallery') }}">{{ __('Galeri') }}</a>
                                 </li>
+                                <li class="{{ request()->routeIs('sk') ? 'active' : '' }}">
+                                    <a href="{{ route('sk') }}">{{ __('Syarat & Ketentuan') }}</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -201,10 +204,10 @@
                             <h3>Quick Links</h3>
                             <ul class="quick-links">
                                 <li>
-                                    <a href="{{ url('about') }}">About us</a>
+                                    <a href="{{ url('about') }}">{{ __('Tentang Kami') }}</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('syarat-ketentuan') }}">Term and Conditions</a>
+                                    <a href="{{ url('syarat-ketentuan') }}">{{ __('Syarat & Ketentuan') }}</a>
                                 </li>
                             </ul>
                             <!-- <ul class="quick-links">
