@@ -5,7 +5,8 @@
     <section class="gauto-slider-area fix">
         <div class="gauto-slide owl-carousel">
             @foreach ($sliders as $s)
-                <div class="gauto-main-slide" style="background: url({{ asset('img/slider/' . $s->foto) }})">
+                <div class="gauto-main-slide"
+                    style="background: url({{ asset('img/slider/' . $s->foto) }}) no-repeat; background-size: stretch;; background-position: center center;">
                     <div class="gauto-main-caption">
                         <div class="gauto-caption-cell">
                             <div class="container">
