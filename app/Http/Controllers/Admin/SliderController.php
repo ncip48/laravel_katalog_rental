@@ -93,6 +93,7 @@ class SliderController extends Controller
         } else {
             unset($input['foto']);
         }
+
         $input['title'] = $request->title;
         $input['description'] = $request->description;
         $slider->update($input);
