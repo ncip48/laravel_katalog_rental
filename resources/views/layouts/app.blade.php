@@ -129,8 +129,8 @@
                                 <img src="{{ asset('vendor/assets/img/clock.png') }}" alt="clock" />
                             </div>
                             <div class="header-promo-info">
-                                <h3>Senin s/d Jumat</h3>
-                                <p>24 Jam</p>
+                                <h3>{{ $site->haribuka }}</h3>
+                                <p>{{ $site->jambuka }} - {{ $site->jamtutup }}</p>
                             </div>
                         </div>
                     </div>
