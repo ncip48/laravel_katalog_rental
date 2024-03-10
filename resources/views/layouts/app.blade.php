@@ -170,6 +170,13 @@
                         </nav>
                     </div>
                 </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="main-search-right">
+                        <!-- Responsive Menu Start -->
+                        <div class="gauto-responsive-menu"></div>
+                        <!-- Responsive Menu Start -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
