@@ -15,19 +15,19 @@
     <title>Login</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/img/logos/favicon.png" />
-    <link rel="apple-touch-icon" href="/img/logos/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/logos/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/logos/apple-touch-icon-114x114.png" />
+    <link rel="shortcut icon" href="{{ asset('img/logos/favicon.png') }}" />
+    <link rel="apple-touch-icon" href="{{ asset('img/logos/apple-touch-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/logos/apple-touch-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/logos/apple-touch-icon-114x114.png') }}" />
 
     <!-- plugins -->
-    <link rel="stylesheet" href="/css/plugins.css" />
+    <link rel="stylesheet" href="{{ asset('css/plugins.css') }}" />
 
     <!-- search css -->
-    <link rel="stylesheet" href="/search/search.css" />
+    <link rel="stylesheet" href="{{ asset('search/search.css') }}" />
 
     <!-- core style css -->
-    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
 
 </head>
 
@@ -98,7 +98,7 @@
 
             <!-- start right content -->
             <div class="container-fluid bg-img height-100vh xs-display-none"
-                data-background="/img/content/login-register.jpg">
+                data-background="{{ asset('img/content/login-register.jpg') }}">
             </div>
             <!-- end right content -->
 
@@ -115,49 +115,49 @@
     <!-- all js include start -->
 
     <!-- jQuery -->
-    <script src="/js/jquery.min.js"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <!-- modernizr js -->
-    <script src="/js/modernizr.js"></script>
+    <script src="{{ asset('js/modernizr.js') }}"></script>
 
     <!-- bootstrap -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
     <!-- Serch -->
-    <script src="/search/search.js"></script>
+    <script src="{{ asset('search/search.js') }}"></script>
 
     <!-- navigation -->
-    <script src="/js/nav-menu.js"></script>
+    <script src="{{ asset('js/nav-menu.js') }}"></script>
 
     <!-- tab -->
-    <script src="/js/easy.responsive.tabs.js"></script>
+    <script src="{{ asset('js/easy.responsive.tabs.js') }}"></script>
 
     <!-- owl carousel -->
-    <script src="/js/owl.carousel.js"></script>
+    <script src="{{ asset('js/owl.carousel.js') }}"></script>
 
     <!-- jquery.counterup.min -->
-    <script src="/js/jquery.counterup.min.js"></script>
+    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
 
     <!-- stellar js -->
-    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
 
     <!-- waypoints js -->
-    <script src="/js/waypoints.min.js"></script>
+    <script src="{{ asset('js/waypoints.min.js') }}"></script>
 
     <!-- countdown js -->
-    <script src="/js/countdown.js"></script>
+    <script src="{{ asset('js/countdown.js') }}"></script>
 
     <!-- jquery.magnific-popup js -->
-    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
 
     <!-- datepicker js -->
-    <script src="/js/datepicker.min.js"></script>
+    <script src="{{ asset('js/datepicker.min.js') }}"></script>
 
     <!-- isotope.pkgd.min js -->
-    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
 
     <!-- custom scripts -->
-    <script src="/js/main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 
     <!-- all js include end -->
 
