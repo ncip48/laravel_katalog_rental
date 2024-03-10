@@ -33,6 +33,11 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
         }
 
+        if (\Str::contains(\Config::get('app.url'), 'http://')) {
+            \URL::forceRootUrl(config('app.url'));
+            \URL::forceScheme('http');
+        }
+
         Blade::directive('currency', function ($expression) {
             return "Rp. <?php echo number_format($expression,0,',','.'); ?>";
         });
