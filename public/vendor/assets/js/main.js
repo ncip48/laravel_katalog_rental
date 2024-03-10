@@ -33,6 +33,8 @@ JS INDEX
 		=================================================================
 		*/
 
+        const baseUrl = "{{asset()}}";
+
         $(".gauto-slide").owlCarousel({
             animateOut: "fadeOutLeft",
             animateIn: "fadeIn",
@@ -44,8 +46,8 @@ JS INDEX
             autoplay: true,
             loop: true,
             navText: [
-                "<img src='vendor/assets/img/prev-1.png'>",
-                "<img src='vendor/assets/img/next-1.png'>",
+                "<img src='" + baseUrl + "vendor/assets/img/prev-1.png'>",
+                "<img src='" + baseUrl + "vendor/assets/img/next-1.png'>",
             ],
             mouseDrag: true,
             touchDrag: true,
