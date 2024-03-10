@@ -12,12 +12,12 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css' />
     <!-- CSS Libraries -->
     @stack('customStyle')
     <!-- Template CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
@@ -77,9 +77,9 @@
     @include('admin.layouts.footer')
 
 
-    <script src="/assets/js/jquery.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     {{-- <script src="/assets/js/popper.min.js"></script> --}}
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <!-- Page Specific JS File -->
     @stack('customScript')
