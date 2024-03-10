@@ -250,10 +250,10 @@
                                         <a href="{{ $site->instagram }}" target="_blank"><i
                                                 class="fa fa-2x fa-instagram"></i></a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="{{ $site->whatsapp }}" target="_blank"><i
                                                 class="fa fa-2x fa-whatsapp"></i></a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
                         </div>
