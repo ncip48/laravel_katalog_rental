@@ -33,7 +33,7 @@ JS INDEX
 		=================================================================
 		*/
 
-        const baseUrl = "{{asset()}}";
+        // const baseUrl = "{{asset()}}";
 
         $(".gauto-slide").owlCarousel({
             animateOut: "fadeOutLeft",
@@ -45,10 +45,10 @@ JS INDEX
             autoplaySpeed: 5000,
             autoplay: true,
             loop: true,
-            navText: [
-                "<img src='" + baseUrl + "vendor/assets/img/prev-1.png'>",
-                "<img src='" + baseUrl + "vendor/assets/img/next-1.png'>",
-            ],
+            // navText: [
+            //     "<img src='" + baseUrl + "vendor/assets/img/prev-1.png'>",
+            //     "<img src='" + baseUrl + "vendor/assets/img/next-1.png'>",
+            // ],
             mouseDrag: true,
             touchDrag: true,
             responsive: {
