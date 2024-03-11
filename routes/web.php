@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AkunController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\ReservasiController;
 use App\Http\Controllers\Admin\HomeController;
@@ -25,6 +26,8 @@ Route::get('/', [ReservasiController::class, 'index'])->name('home');
 Route::get('gallery', [GaleriController::class, 'index'])->name('gallery');
 Route::get('syarat-ketentuan', [SiteController::class, 'syaratUser'])->name('sk');
 Route::get('about', [SiteController::class, 'aboutUser'])->name('about');
+Route::get('akun', [AkunController::class, 'index'])->name('akun');
+Route::patch('akun/{user}', [AkunController::class, 'update'])->name('akun.update');
 
 //route login, gatau jangan diubah
 // Auth::routes();

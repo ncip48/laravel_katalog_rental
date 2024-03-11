@@ -121,7 +121,7 @@
                             </div>
                             <div class="header-promo-info">
                                 <h3>Indonesia</h3>
-                                <p>Ngawi, Jawa Timur</p>
+                                <p>{{ $site->city }}</p>
                             </div>
                         </div>
                         <div class="single-header-promo">

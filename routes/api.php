@@ -22,22 +22,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/', function () {
-    return ResponseController::response(true, 'Welcome to API', []);
-});
-
-//rute http://localhost/api/jam
-Route::get('/jam', [WaktuController::class, 'getJam']);
-
-//rute get meja
-Route::get('/meja', [MejaController::class, 'getMeja']);
-
-//rute cek meja
-Route::get('/cek-gedung', [ReservasiController::class, 'cekGedung']);
-
-
-//callback
-Route::post('/midtrans/callback', [CallbackController::class, 'callback_midtrans']);
-
-Route::get('/rekening', [App\Http\Controllers\RekeningController::class, 'index_api']);

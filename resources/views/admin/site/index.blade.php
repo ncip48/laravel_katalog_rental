@@ -47,19 +47,30 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
-                                            <label for="phone" class="form-label">No HP</label>
-                                            <input type="phone" class="form-control" id="phone" name="phone"
-                                                value="{{ $site->phone }}" required>
-                                            @error('phone')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                            @enderror
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">No HP</label>
+                                                <input type="phone" class="form-control" id="phone" name="phone"
+                                                    value="{{ $site->phone }}" required>
+                                                @error('phone')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
+                                            </div>
+                                            <div>
+                                                <label for="city" class="form-label">Kota, Provinsi</label>
+                                                <input type="city" class="form-control" id="city" name="city"
+                                                    value="{{ $site->city }}" required>
+                                                @error('city')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
+                                            </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="description" class="form-label">Deskripsi</label>
-                                            <input type="text" class="form-control" id="description" name="description"
-                                                value="{{ $site->description }}" required>
+                                            <textarea type="text" class="form-control" id="description" name="description" rows="5">{{ $site->description }}</textarea>
                                             @error('description')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
@@ -113,8 +124,8 @@
                                         <div class="col-md-6 mb-3">
                                             <div class="mb-3">
                                                 <label for="instagram" class="form-label">Instagram</label>
-                                                <input type="text" class="form-control" id="instagram" name="instagram"
-                                                    value="{{ $site->instagram }}">
+                                                <input type="text" class="form-control" id="instagram"
+                                                    name="instagram" value="{{ $site->instagram }}">
                                                 @error('instagram')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
