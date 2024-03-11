@@ -113,9 +113,9 @@
                             {!! $site->about !!}
                         </p>
                         <div class="about-signature">
-                            <div class="signature-left">
+                            {{-- <div class="signature-left">
                                 <img src="/vendor/assets/img/signature.png" alt="signature" />
-                            </div>
+                            </div> --}}
                             <div class="signature-right">
                                 <h3>{{ $site->owner }}</h3>
                                 <p>{{ __('Owner') }}</p>
