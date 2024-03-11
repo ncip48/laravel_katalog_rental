@@ -98,7 +98,9 @@
 
             <!-- start right content -->
             <div class="container-fluid bg-img height-100vh xs-display-none"
-                data-background="{{ asset('img/content/login-register.jpg') }}">
+                data-background="{{ asset('img/content/login.jpg') }}"
+                style="background-repeat: no-repeat;
+                background-position: center;">
             </div>
             <!-- end right content -->
 
